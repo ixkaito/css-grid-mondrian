@@ -1,6 +1,9 @@
 {
   "extends": ["stylelint-config-sass-guidelines"],
   "rules": {
-    "indentation": "tab"
+    "indentation": "tab",
+    "property-no-unknown": [true, {
+      "ignoreProperties": ["aspect-ratio"]
+    }]
   }
 }

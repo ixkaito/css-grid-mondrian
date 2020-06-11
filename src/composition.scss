@@ -1,0 +1,81 @@
+@use 'sass:math';
+
+$alphabet: a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z;
+$white: #f0f0f0;
+
+body {
+	font-family: 'Prompt', sans-serif;
+}
+
+h1 {
+	font-size: 3rem;
+	line-height: 1.25;
+	margin-top: 25vmin;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+h2 {
+	font-size: 1rem;
+	font-weight: 600;
+	line-height: 1.5;
+	margin-top: 30px;
+	text-align: center;
+	text-transform: uppercase;
+}
+
+.container {
+	margin: auto;
+	max-width: 800px;
+	width: calc(100vmin - 60px);
+}
+
+.canvas {
+	background: $white;
+	margin-top: 25vmin;
+	position: relative;
+}
+
+.composition {
+	bottom: 0;
+	display: grid;
+	left: 0;
+	position: absolute;
+	right: 0;
+	top: 0;
+}
+
+.white {
+	background: $white;
+}
+
+.black {
+	background: #000;
+}
+
+.yellow {
+	background: #ec0;
+}
+
+@for $i from 1 to length($alphabet) {
+	.#{nth($alphabet, $i)} {
+		grid-area: #{nth($alphabet, $i)};
+	}
+}
+
+.composition-with-yellow-patch-1930 {
+	// aspect-ratio: 46 / 46.5;
+	padding-bottom: math.percentage(46 / 46.5);
+
+	.composition {
+		grid:
+			'. a . . .' 375fr
+			'b a c c c' 20fr
+			'. a . d e' 85fr
+			'. a . d f' 34fr
+			'. a . d .' 102fr
+			'. a g d .' 20fr
+			'. a . d .' 12fr
+			/ 320fr 20fr 240fr 20fr 40fr;
+	}
+}

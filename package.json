@@ -3,17 +3,21 @@
   "version": "0.1.0",
   "main": "index.js",
   "scripts": {
-    "dev": "run-p pug sass browser",
-    "browser": "browser-sync dist -f \"dist/**/*\"",
-    "pug": "pug src -o dist -w",
+    "dev": "npm-run-all sass -p watch:*",
     "presass": "stylelint src/**/* --fix",
-    "sass": "sass src:dist --style=compressed --watch"
+    "sass": "sass src:dist --style=compressed",
+    "postsass": "postcss dist/*.css --use=autoprefixer --dir=dist --map",
+    "watch:pug": "pug src -o dist -w",
+    "watch:browser": "browser-sync dist -f \"dist/**/*\"",
+    "watch:sass": "onchange src/**/*.scss -e .DS_Store -- npm run sass"
   },
   "author": "Kite",
   "license": "MIT",
   "dependencies": {
     "browser-sync": "^2.26.7",
     "npm-run-all": "^4.1.5",
+    "onchange": "^7.0.2",
+    "postcss-cli": "^7.1.1",
     "pug": "^3.0.0",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.26.8",
