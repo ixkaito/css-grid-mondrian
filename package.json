@@ -1,7 +1,6 @@
 {
   "name": "css-grid-mondrian",
   "version": "0.1.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "dev": "run-p pug sass browser",
@@ -17,5 +16,20 @@
     "pug": "^3.0.0",
     "pug-cli": "^1.0.0-alpha6",
     "sass": "^1.26.8"
-  }
+  },
+  "devDependencies": {},
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/ixkaito/css-grid-mondrian.git"
+  },
+  "keywords": [
+    "css",
+    "grid",
+    "mondrian"
+  ],
+  "bugs": {
+    "url": "https://github.com/ixkaito/css-grid-mondrian/issues"
+  },
+  "homepage": "https://github.com/ixkaito/css-grid-mondrian#readme",
+  "description": "CSS Grid Mondrian"
 }
