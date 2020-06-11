@@ -1,0 +1,21 @@
+{
+  "name": "css-grid-mondrian",
+  "version": "0.1.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "dev": "run-p pug sass browser",
+    "browser": "browser-sync dist -f \"dist/**/*\"",
+    "pug": "pug src -o dist -w",
+    "sass": "sass src:dist --style=compressed --watch"
+  },
+  "author": "Kite",
+  "license": "MIT",
+  "dependencies": {
+    "browser-sync": "^2.26.7",
+    "npm-run-all": "^4.1.5",
+    "pug": "^3.0.0",
+    "pug-cli": "^1.0.0-alpha6",
+    "sass": "^1.26.8"
+  }
+}
