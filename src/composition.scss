@@ -39,7 +39,9 @@ h2 {
 .composition {
 	bottom: 0;
 	display: grid;
+	height: 800px;
 	left: 0;
+	max-height: 100%;
 	position: absolute;
 	right: 0;
 	top: 0;
@@ -67,14 +69,23 @@ h2 {
 	}
 }
 
+.test {
+	padding-bottom: 100%;
+
+	.composition {
+		grid-template-columns: 1fr 1fr;
+		grid-template-rows: 50% 50%;
+	}
+}
+
 .composition-with-large-red-plane-yellow-black-gray-and-blue-1921 {
 	// aspect-ratio: 95.7 / 95.1;
 	padding-bottom: math.percentage(95.7 / 95.1);
 
 	.composition {
 		grid:
-			'a a b . c d e f' 74fr
-			'. g g g c h h f' 10fr
+			'a a b . c d e f' 74%
+			'. g g g c h h f' 10%
 			/ 18fr 54fr 11fr 68fr 11fr 75fr 11fr 145fr 11fr 91fr 11fr 89fr 11fr 34fr;
 	}
 }
