@@ -53,6 +53,10 @@ h2 {
 	background: #000;
 }
 
+.gray {
+	background: #dddfe2;
+}
+
 .yellow {
 	background: #ec0;
 }
@@ -60,6 +64,18 @@ h2 {
 @for $i from 1 to length($alphabet) {
 	.#{nth($alphabet, $i)} {
 		grid-area: #{nth($alphabet, $i)};
+	}
+}
+
+.composition-with-large-red-plane-yellow-black-gray-and-blue-1921 {
+	// aspect-ratio: 95.7 / 95.1;
+	padding-bottom: math.percentage(95.7 / 95.1);
+
+	.composition {
+		grid:
+			'a a b . c d e f' 74fr
+			'. g g g c h h f' 10fr
+			/ 18fr 54fr 11fr 68fr 11fr 75fr 11fr 145fr 11fr 91fr 11fr 89fr 11fr 34fr;
 	}
 }
 
