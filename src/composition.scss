@@ -1,7 +1,4 @@
-@use 'sass:math';
-
 $alphabet: a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z;
-$white: #f0f0f0;
 
 body {
 	font-family: 'Prompt', sans-serif;
@@ -22,10 +19,6 @@ h2 {
 	margin-top: 30px;
 	text-align: center;
 	text-transform: uppercase;
-}
-
-.white {
-	background: $white;
 }
 
 .black {
@@ -50,7 +43,7 @@ h2 {
 }
 
 .canvas {
-	background: $white;
+	background: #f0f0f0;
 	display: grid;
 	margin: 25vmin auto 0;
 }
@@ -68,7 +61,6 @@ h2 {
 }
 
 .composition-with-large-red-plane-yellow-black-gray-and-blue-1921 {
-	// aspect-ratio: 95.7 / 95.1;
 	grid:
 		' ae   ae   ae   ae   .    .    .    .     d    d    d    d    d   af' 13fr
 		' ae   ae   ae   ae   .    .    .    .     l    e    e    e    e   af' 6fr
@@ -94,15 +86,14 @@ h2 {
 }
 
 .composition-with-yellow-patch-1930 {
-	// aspect-ratio: 46 / 46.5;
 	grid:
-		'. a . . .' 375fr
-		'b a c c c' 20fr
-		'. a . d e' 85fr
-		'. a . d f' 34fr
-		'. a . d .' 102fr
-		'. a g d .' 20fr
-		'. a . d .' 12fr
+		' .     a    .     .    .' 375fr
+		' b     a    c     c    c' 20fr
+		' .     a    .     d    g' 85fr
+		' .     a    .     d    e' 34fr
+		' .     a    .     d    .' 102fr
+		' .     a    f     d    .' 20fr
+		' .     a    .     d    .' 12fr
 		/ 320fr 20fr 240fr 20fr 40fr;
 	height: 46.5vmin;
 	width: 46vmin;
