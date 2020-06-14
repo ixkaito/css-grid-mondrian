@@ -24,7 +24,7 @@ h2 {
 }
 
 .gray {
-	background: #dddfe2;
+	background: #d3d8dd;
 }
 
 .red {
@@ -37,7 +37,6 @@ h2 {
 
 .blue {
 	background: #05a;
-	// background: #06b;
 }
 
 .canvas {
@@ -75,6 +74,23 @@ h2 {
 		/ 18fr 54fr 11fr 68fr 11fr 75fr 11fr 145fr 11fr 91fr 11fr 89fr 11fr 34fr;
 	height: 95.1vmin;
 	width: 95.7vmin;
+}
+
+.tableau-i-1921 {
+	grid:
+		' a1   a1   a1   a2   a12   a12  a12  a12  a12' 75fr
+		' .    .    .    a2   a12   a12  a12  a12  a12' 303fr
+		' .    .    .    a2   a3    a3   a3   a3   a3'  13fr
+		' .    .    .    a2   a13   a13  a13  a4   .'   163fr
+		' a5   a5   a5   a2   a6    a6   a6   a4   .'   14fr
+		' a7   a8   a14  a2   a15   a15  a15  a4   .'   52fr
+		' a16  a8   a14  a2   a15   a15  a15  a4   .'   145fr
+		' a16  a8   a14  a2   a9    a9   a9   a9   a9'  14fr
+		' a16  a8   a14  a2   .     a10  a17  a17  a17' 174fr
+		' a16  a8   a14  a2   a11   a11  a11  a11  a11' 12fr
+		/ 42fr 13fr 98fr 13fr 325fr 13fr 78fr 12fr 11fr;
+	height: 96.5vmin;
+	width: 60.5vmin;
 }
 
 .composition-with-yellow-patch-1930 {
