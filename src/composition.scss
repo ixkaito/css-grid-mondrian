@@ -43,6 +43,16 @@ h2 {
 	background: #f0f0f0;
 	display: grid;
 	margin: 25vmin auto 0;
+	overflow: hidden;
+}
+
+.lozenge {
+	transform: rotate(45deg) scale(0.707106781);
+
+	.inner {
+		display: grid;
+		transform: rotate(-45deg) scale(1.41421356237);
+	}
 }
 
 @for $i from 1 through 99 {
@@ -91,6 +101,19 @@ h2 {
 		/ 42fr 13fr 98fr 13fr 325fr 13fr 78fr 12fr 11fr;
 	height: 96.5vmin;
 	width: 60.5vmin;
+}
+
+.lozenge-with-two-lines-and-blue-color-1926 {
+	height: 85vmin;
+	width: 85vmin;
+
+	.inner {
+		grid:
+			' .     a1   .'  599fr
+			' a2    a1   a3' 18fr
+			' a4    a1   .'  233fr
+			/ 247fr 18fr 585fr;
+	}
 }
 
 .composition-with-yellow-patch-1930 {
