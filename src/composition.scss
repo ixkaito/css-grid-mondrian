@@ -1,5 +1,3 @@
-$alphabet: a, b, c, d, e, f, g, h, i, j, k, l, m, n, o, p, q, r, s, t, u, v, w, x, y, z;
-
 body {
 	font-family: 'Prompt', sans-serif;
 }
@@ -14,7 +12,7 @@ h1 {
 
 h2 {
 	font-size: 1rem;
-	font-weight: 600;
+	font-weight: 500;
 	line-height: 1.5;
 	margin-top: 30px;
 	text-align: center;
@@ -48,38 +46,32 @@ h2 {
 	margin: 25vmin auto 0;
 }
 
-@for $i from 1 through length($alphabet) {
-	.#{nth($alphabet, $i)} {
-		grid-area: #{nth($alphabet, $i)};
-	}
-
-	@for $j from 1 through length($alphabet) {
-		.#{nth($alphabet, $i)}#{nth($alphabet, $j)} {
-			grid-area: #{nth($alphabet, $i)}#{nth($alphabet, $j)};
-		}
+@for $i from 1 through 99 {
+	.a#{$i} {
+		grid-area: a#{$i};
 	}
 }
 
 .composition-with-large-red-plane-yellow-black-gray-and-blue-1921 {
 	grid:
-		' ae   ae   ae   ae   .    .    .    .     d    d    d    d    d   af' 13fr
-		' ae   ae   ae   ae   .    .    .    .     l    e    e    e    e   af' 6fr
-		' ae   ae   ae   ae   k    .    .    .     l    e    e    e    e   af' 4fr
-		' ae   ae   ae   ae   k    .    .    .     l    f    f    f    m   af' 50fr
-		' .    n    n    n    n    n    n    n     n    n    n    n    o   af' 11fr
-		' .    .    p    a    a    a    a    a     q    g    g    g    o   af' 149fr
-		' .    r    p    a    a    a    a    a     q    s    s    s    o   af' 11fr
-		' ag   ag   p    a    a    a    a    a     q    .    t    .    o   af' 150fr
-		' ag   ag   p    u    u    u    u    u     q    v    v    v    o   af' 11fr
-		' ag   ag   p    w    w    w    x    ah    q    .    .    .    o   af' 71fr
-		' h    y    p    w    w    w    x    z     q    aa   aa   aa   o   ab' 11fr
-		' i    i    p    w    w    w    x    ai    q    aj   aj   aj   o    b' 67fr
-		' i    i    p    w    w    w    x    ac    q    aj   aj   aj   o    b' 11fr
-		' i    i    p    .    .    .    x    ac    q    aj   aj   aj   o    b' 32fr
-		' i    i    p    .    .    .    x    ac    q    ad   ad   ad   o    b' 11fr
-		' i    i    p    .    .    .    x    .     .    .    .    .    o    b' 9fr
-		' j    j    j    .    .    .    x    .     .    .    .    .    o    b' 8fr
-		' j    j    j    .    .    .    .    .     .    .    .    .    c    c' 11fr
+		' a30  a30  a30  a30  .    .    .    .     a4   a5   a5   a5   a6  a31' 13fr
+		' a30  a30  a30  a30  .    .    .    .     a12  a5   a5   a5   a6  a31' 6fr
+		' a30  a30  a30  a30  a11  .    .    .     a12  a5   a5   a5   a6  a31' 4fr
+		' a30  a30  a30  a30  a11  .    .    .     a12  a5   a5   a5   a13 a31' 50fr
+		' .    a14  a14  a14  a14  a14  a14  a14   a12  a15  a15  a15  a13 a31' 11fr
+		' .    .    a16  a1   a1   a1   a1   a1    a12  a7   a7   a7   a13 a31' 149fr
+		' .    a17  a16  a1   a1   a1   a1   a1    a12  a18  a18  a18  a13 a31' 11fr
+		' a32  a32  a16  a1   a1   a1   a1   a1    a12  .    a19  .    a13 a31' 150fr
+		' a32  a32  a16  a20  a20  a20  a20  a20   a12  a21  a21  a21  a13 a31' 11fr
+		' a32  a32  a16  a22  a22  a22  a23  a33   a12  .    .    .    a13 a31' 71fr
+		' a8   a24  a16  a22  a22  a22  a23  a25   a12  a26  a26  a26  a13 a27' 11fr
+		' a9   a9   a16  a22  a22  a22  a23  a34   a12  a35  a35  a35  a13 a2'  67fr
+		' a9   a9   a16  a22  a22  a22  a23  a28   a12  a35  a35  a35  a13 a2'  11fr
+		' a9   a9   a16  .    .    .    a23  a28   a12  a35  a35  a35  a13 a2'  32fr
+		' a9   a9   a16  .    .    .    a23  a28   a12  a29  a29  a29  a13 a2'  11fr
+		' a9   a9   a16  .    .    .    a23  .     .    .    .    .    a13 a2'  9fr
+		' a9   a9   a10  .    .    .    a23  .     .    .    .    .    a13 a2'  8fr
+		' a9   a9   a10  .    .    .    .    .     .    .    .    .    a3  a2'  11fr
 		/ 18fr 54fr 11fr 68fr 11fr 75fr 11fr 145fr 11fr 91fr 11fr 89fr 11fr 34fr;
 	height: 95.1vmin;
 	width: 95.7vmin;
@@ -87,13 +79,13 @@ h2 {
 
 .composition-with-yellow-patch-1930 {
 	grid:
-		' .     a    .     .    .' 375fr
-		' b     a    c     c    c' 20fr
-		' .     a    .     d    g' 85fr
-		' .     a    .     d    e' 34fr
-		' .     a    .     d    .' 102fr
-		' .     a    f     d    .' 20fr
-		' .     a    .     d    .' 12fr
+		' .     a1   .     .    .' 375fr
+		' a2    a1   a3    a3   a3' 20fr
+		' .     a1   .     a4   a7' 85fr
+		' .     a1   .     a4   a5' 34fr
+		' .     a1   .     a4   .' 102fr
+		' .     a1   a6    a4   .' 20fr
+		' .     a1   .     a4   .' 12fr
 		/ 320fr 20fr 240fr 20fr 40fr;
 	height: 46.5vmin;
 	width: 46vmin;
