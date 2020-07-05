@@ -103,6 +103,29 @@ h2 {
 	width: 60.5vmin;
 }
 
+.lozenge-composition-with-yellow-black-blue-red-and-gray-1921 {
+	height: 84.8vmin;
+	width: 84.8vmin;
+
+	.inner {
+		grid:
+			' .    a1   a1  a1   a1   .   .    .    .    .    .   .  ' 43fr
+			' .    a1   a1  a1   a1   .   .    a2   .    .    .   .  ' 8fr
+			' .    a1   a1  a1   a1   .   .    .    .    .    .   .  ' 23fr
+			' .    a1   a1  a1   a1   a3  .    .    .    .    .   .  ' 106fr
+			' .    a1   a1  a1   a1   a3  .    .    .    .    a4  .  ' 100fr
+			' .    a5   a5  a5   a5   a5  a5   a5   a5   a5   a5  a5 ' 8fr
+			' .    .    a6  a7   a7   a8  .    .    .    .    a9  a12' 118fr
+			' .    .    a6  .    .    a8  .    .    .    .    a9  a12' 9fr
+			' .    .    .   .    .    a8  .    .    .    .    a9  a12' 9fr
+			' .    .    .   .    .    a8  .    .    .    .    .   .  ' 69fr
+			' .    .    .   .    a10  a8  a11  a11  a11  .    .   .  ' 8fr
+			' .    .    .   .    a13  a8  .    .    .    .    .   .  ' 26fr
+			' .    .    .   .    .    .   .    .    .    .    .   .  ' 73fr
+			/ 23fr 95fr 8fr 72fr 28fr 8fr 21fr 86fr 58fr 70fr 8fr 123fr;
+	}
+}
+
 .lozenge-with-two-lines-and-blue-color-1926 {
 	height: 85vmin;
 	width: 85vmin;
@@ -118,13 +141,13 @@ h2 {
 
 .composition-with-yellow-patch-1930 {
 	grid:
-		' .     a1   .     .    .' 375fr
+		' .     a1   .     .    .'  375fr
 		' a2    a1   a3    a3   a3' 20fr
 		' .     a1   .     a4   a7' 85fr
 		' .     a1   .     a4   a5' 34fr
-		' .     a1   .     a4   .' 102fr
-		' .     a1   a6    a4   .' 20fr
-		' .     a1   .     a4   .' 12fr
+		' .     a1   .     a4   .'  102fr
+		' .     a1   a6    a4   .'  20fr
+		' .     a1   .     a4   .'  12fr
 		/ 320fr 20fr 240fr 20fr 40fr;
 	height: 46.5vmin;
 	width: 46vmin;

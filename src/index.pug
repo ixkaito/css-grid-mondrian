@@ -9,33 +9,41 @@ html(lang="en")
   body
     h1 CSS Grid Mondrian
 
-    mixin item(from, to, color)
+    mixin a(from, to, color)
       - for(var i = from; i <= to; i++)
         div(class=`a${i} ${color}`)
 
     .canvas.composition-with-large-red-plane-yellow-black-gray-and-blue-1921
-      +item(1, 3, 'red')
-      +item(4, 10, 'yellow')
-      +item(11, 29, 'black')
-      +item(30, 34, 'gray')
-      .a35.blue
+      +a(1, 3, 'red')
+      +a(4, 10, 'yellow')
+      +a(11, 29, 'black')
+      +a(30, 34, 'gray')
+      +a(35, 35, 'blue')
     h2 Composition with Large Red Plane, Yellow, Black, Gray, and Blue, 1921
 
     .canvas.tableau-i-1921
-      +item(1, 11, 'black')
-      .a12.red
-      +item(13, 15, 'gray')
-      .a16.yellow
-      .a17.blue
+      +a(1, 11, 'black')
+      +a(12, 12, 'red')
+      +a(13, 15, 'gray')
+      +a(16, 16, 'yellow')
+      +a(17, 17, 'blue')
     h2 Tableau I, 1921
+
+    .canvas.lozenge.lozenge-composition-with-yellow-black-blue-red-and-gray-1921
+      .inner
+        +a(1, 1, 'yellow')
+        +a(2, 11, 'black')
+        +a(12, 12, 'blue')
+        +a(13, 13, 'red')
+    h2 Lozenge Composition with Yellow, Black, Blue, Red, and Gray, 1921
 
     .canvas.lozenge.lozenge-with-two-lines-and-blue-color-1926
       .inner
-        +item(1, 3, 'black')
-        .a4.blue
+        +a(1, 3, 'black')
+        +a(4, 4, 'blue')
     h2 Lozenge with Two Lines and Blue Color, 1926
 
     .canvas.composition-with-yellow-patch-1930
-      +item(1, 6, 'black')
-      .a7.yellow
+      +a(1, 6, 'black')
+      +a(7, 7, 'yellow')
     h2 Composition with Yellow Patch, 1930
