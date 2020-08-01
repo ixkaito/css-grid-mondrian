@@ -127,8 +127,24 @@ h2 {
 }
 
 .tableau-ii-1922 {
+	grid:
+		' .   .   .    .    .     .    a1    a2   a3    a3 ' 2.7fr
+		' .   .   .    .    .     a4   a1    a2   a3    a3 ' 44.3fr
+		' .   .   a5   a5   a5    a5   a5    a2   a3    a3 ' 14fr
+		' .   .   .    a6   .     .    .     a2   a3    a3 ' 63fr
+		' .   .   .    a6   .     .    .     a2   a3    a3 ' 14fr
+		' .   .   .    a6   .     .    .     a2   .     .  ' 111fr
+		' a7  a7  a7   a6   .     .    .     a2   .     .  ' 14fr
+		' a10 a10 a10  a6   .     .    .     a2   .     .  ' 167fr
+		' a11 a8  a8   a8   a8    a8   a8    a2   .     .  ' 9fr
+		' a12 a8  a8   a8   a8    a8   a8    a2   .     .  ' 4fr
+		' a13 a13 a13  a13  a13   a13  a13   a2   .     .  ' 75fr
+		' a13 a13 a13  a13  a13   a13  a13   a2   a9    a9 ' 7fr
+		' a13 a13 a13  a13  a13   a13  a13   a2   a9    a9 ' 7fr
+		' a13 a13 a13  a13  a13   a13  a13   a2   a14   a14' 17fr
+		' a13 a13 a13  a13  a13   a13  a13   a15  a14   a14' 6.5fr
+		/ 8fr 2fr 17fr 14fr 169fr 15fr 194fr 12fr 104fr 1.4fr;
 	height: 55.55vmin;
-	// grid:
 	width: 53.64vmin;
 }
 
