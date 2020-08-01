@@ -194,3 +194,17 @@ h2 {
 	height: 46.5vmin;
 	width: 46vmin;
 }
+
+.composition-iii-with-blue-yellow-and-white-1936 {
+	grid:
+		' a1    a2  . ' 38fr
+		' a3    a2  a4' 9fr
+		' .     a2  . ' 96fr
+		' a5    a2  a6' 9fr
+		' .     a2  . ' 232fr
+		' a7    a2  . ' 10fr
+		' a8    a2  . ' 41fr
+		/ 123fr 7fr 205fr;
+	height: 43.5vmin;
+	width: 33.5vmin;
+}
