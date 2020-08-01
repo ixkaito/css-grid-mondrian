@@ -167,6 +167,16 @@ h2 {
 }
 
 .composition-ii-with-red-blue-and-yellow-1930 {
+	grid:
+		' .     a1   a7    a7   a7     a7' 178fr
+		' a2    a1   a7    a7   a7     a7' 36fr
+		' .     a1   a7    a7   a7     a7' 216fr
+		' a3    a1   a4    a4   a4     a4' 17fr
+		' a8    a1   .     a5   .      . ' 58fr
+		' a8    a1   .     a5   a6     . ' 14fr
+		' a8    a1   .     a5   a6     a9' 12fr
+		' a8    a1   .     a5   a10    a9' 64fr
+		/ 127fr 18fr 384fr 20fr 42.5fr 3.5fr;
 	height: 59.5vmin;
 	width: 59.5vmin;
 }
