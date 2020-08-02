@@ -5,7 +5,7 @@ body {
 h1 {
 	font-size: 3rem;
 	line-height: 1.25;
-	margin-top: 25vmin;
+	margin: 25vmin auto;
 	text-align: center;
 	text-transform: uppercase;
 }
@@ -15,6 +15,7 @@ h2 {
 	font-weight: 500;
 	line-height: 1.5;
 	margin-top: 30px;
+	padding: 0 1em;
 	text-align: center;
 	text-transform: uppercase;
 }
