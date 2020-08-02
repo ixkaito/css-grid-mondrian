@@ -158,8 +158,8 @@ h2 {
 }
 
 .tableau-i-lozenge-with-four-lines-and-gray-1926 {
-	height: 115.6vmin;
-	width: 115.6vmin;
+	height: vmin(115.6);
+	width: vmin(115.6);
 
 	.inner {
 		grid:
