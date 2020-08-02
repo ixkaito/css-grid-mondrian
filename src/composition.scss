@@ -55,7 +55,7 @@ h2 {
 	}
 }
 
-@for $i from 1 through 99 {
+@for $i from 1 through 199 {
 	.a#{$i} {
 		grid-area: a#{$i};
 	}
@@ -207,4 +207,36 @@ h2 {
 		/ 123fr 7fr 205fr;
 	height: 43.5vmin;
 	width: 33.5vmin;
+}
+
+.new-york-city-i-1942 {
+	grid:
+		' .    a1   .    a122 .    a2   .     a123 .    a3   .     a4   .    a5   .    a6   .    a7   .    a124 .    a8   .   ' 18fr
+		' a125 a1   a126 a126 a126 a2   a127  a123 a128 a3   a129  a4   a130 a5   a131 a6   a132 a7   a133 a124 a134 a8   a135' 25fr
+		' .    a1   .    a78  .    a2   .     a123 .    a3   .     a4   .    a5   .    a6   .    a7   .    a124 .    a8   .   ' 25fr
+		' a9   a1   a10  a10  a10  a2   a11   a123 a12  a3   a13   a4   a14  a5   a15  a6   a16  a7   a17  a17  a17  a8   a18 ' 25fr
+		' .    a1   .    a79  .    a2   .     a123 .    a3   .     a4   .    a5   .    a6   .    a7   .    a136 .    a8   .   ' 10fr
+		' a80  a1   a81  a79  a82  a2   a83   a123 a84  a3   a85   a4   a86  a5   a87  a6   a88  a7   a89  a136 a90  a8   a91 ' 24fr
+		' .    a1   .    a79  .    a2   .     a123 .    a3   .     a4   .    a5   .    a6   .    a7   .    a136 .    a8   .   ' 135fr
+		' a19  a1   a20  a20  a20  a2   a21   a21  a21  a3   a22   a4   a23  a5   a24  a6   a25  a7   a26  a136 a27  a8   a28 ' 27fr
+		' .    a1   .    a92  .    a2   .     a137 .    a3   .     a4   .    a5   .    a6   .    a7   .    a136 .    a8   .   ' 190fr
+		' a93  a93  a93  a93  a93  a2   a94   a137 a95  a3   a96   a4   a97  a5   a98  a6   a99  a7   a100 a136 a101 a8   a102' 26fr
+		' .    a29  .    a103 .    a2   .     a137 .    a3   .     a4   .    a5   .    a6   .    a7   .    a136 .    a8   .   ' 11fr
+		' a30  a29  a31  a31  a31  a2   a32   a32  a32  a3   a33   a4   a34  a5   a35  a6   a36  a7   a37  a37  a37  a8   a38 ' 26fr
+		' .    a29  .    a104 .    a2   .     a138 .    a3   .     a4   .    a5   .    a6   .    a7   .    a139 .    a8   .   ' 194fr
+		' a39  a29  a40  a40  a40  a2   a41   a138 a42  a3   a43   a4   a44  a5   a45  a6   a46  a7   a47  a47  a47  a8   a48 ' 28fr
+		' .    a29  .    a105 .    a2   .     a138 .    a3   .     a4   .    a5   .    a6   .    a7   .    a140 .    a8   .   ' 19fr
+		' a141 a29  a142 a142 a142 a142 a142  a138 a143 a3   a144  a4   a145 a5   a146 a6   a147 a7   a148 a140 a149 a8   a150' 27fr
+		' .    a29  .    a106 .    a49  .     a138 .    a3   .     a4   .    a5   .    a6   .    a7   .    a140 .    a8   .   ' 128fr
+		' a50  a29  a51  a51  a51  a49  a52   a52  a52  a3   a53   a4   a54  a5   a55  a6   a56  a7   a57  a57  a57  a8   a58 ' 27fr
+		' .    a29  .    a107 .    a49  .     a151 .    a3   .     a4   .    a5   .    a6   .    a7   .    a152 .    a8   .   ' 48fr
+		' a59  a29  a60  a60  a60  a49  a61   a61  a61  a3   a62   a4   a63  a5   a64  a6   a65  a7   a66  a66  a66  a8   a67 ' 28fr
+		' .    a29  .    a108 .    a49  .     a153 .    a3   .     a4   .    a5   .    a6   .    a7   .    a154 .    a8   .   ' 61fr
+		' a109 a29  a110 a110 a110 a49  a111  a153 a112 a3   a113  a4   a114 a5   a115 a6   a116 a7   a117 a154 a118 a8   a119' 25fr
+		' .    a29  .    a120 .    a49  .     a153 .    a3   .     a4   .    a5   .    a6   .    a7   .    a154 .    a8   .   ' 18fr
+		' a68  a29  a69  a69  a69  a49  a70   a153 a71  a3   a72   a4   a73  a5   a74  a6   a75  a7   a76  a76  a76  a8   a77 ' 28fr
+		' .    a29  .    a121 .    a49  .     a153 .    a3   .     a4   .    a5   .    a6   .    a7   .    a155 .    a8   .   ' 20fr
+		/ 23fr 24fr 23fr 24fr 18fr 24fr 218fr 25fr 82fr 25fr 240fr 24fr 62fr 25fr 81fr 24fr 38fr 19fr 53fr 24fr 17fr 24fr 25fr;
+	height: 114.2vmin;
+	width: 119.3vmin;
 }
