@@ -62,9 +62,12 @@ h2 {
 }
 
 /**
- * 1vmin = 1cm
+ * 1cm = 0.8vmin
  * lozenge width/height is not the canvas size but vertical/horizontal axis
  */
+@function vmin($cm) {
+	@return #{0.8 * $cm}vmin;
+}
 
 .composition-with-large-red-plane-yellow-black-gray-and-blue-1921 {
 	grid:
@@ -87,8 +90,8 @@ h2 {
 		' a9   a9   a10  .    .    .    a23  .     .    .    .    .    a13 a2'  8fr
 		' a9   a9   a10  .    .    .    .    .     .    .    .    .    a3  a2'  11fr
 		/ 18fr 54fr 11fr 68fr 11fr 75fr 11fr 145fr 11fr 91fr 11fr 89fr 11fr 34fr;
-	height: 95.1vmin;
-	width: 95.7vmin;
+	height: vmin(95.1);
+	width: vmin(95.7);
 }
 
 .tableau-i-1921 {
@@ -104,13 +107,13 @@ h2 {
 		' a16  a8   a14  a2   .     a10  a17  a17  a17' 174fr
 		' a16  a8   a14  a2   a11   a11  a11  a11  a11' 12fr
 		/ 42fr 13fr 98fr 13fr 325fr 13fr 78fr 12fr 11fr;
-	height: 96.5vmin;
-	width: 60.5vmin;
+	height: vmin(96.5);
+	width: vmin(60.5);
 }
 
 .lozenge-composition-with-yellow-black-blue-red-and-gray-1921 {
-	height: 84.8vmin;
-	width: 84.8vmin;
+	height: vmin(84.8);
+	width: vmin(84.8);
 
 	.inner {
 		grid:
@@ -149,13 +152,13 @@ h2 {
 		' a13 a13 a13  a13  a13   a13  a13   a2   a14   a14' 16fr
 		' a13 a13 a13  a13  a13   a13  a13   a15  a14   a14' 7fr
 		/ 8fr 2fr 17fr 14fr 168fr 15fr 193fr 12fr 102.5fr 1.5fr;
-	height: 55.6vmin;
-	width: 53.3vmin;
+	height: vmin(55.6);
+	width: vmin(53.3);
 }
 
 .lozenge-with-two-lines-and-blue-color-1926 {
-	height: 85vmin;
-	width: 85vmin;
+	height: vmin(85);
+	width: vmin(85);
 
 	.inner {
 		grid:
@@ -177,8 +180,8 @@ h2 {
 		' a8    a1   .     a5   a6     a9' 12fr
 		' a8    a1   .     a5   a10    a9' 64fr
 		/ 127fr 18fr 384fr 20fr 42.5fr 3.5fr;
-	height: 59.5vmin;
-	width: 59.5vmin;
+	height: vmin(59.5);
+	width: vmin(59.5);
 }
 
 .composition-with-yellow-patch-1930 {
@@ -191,8 +194,8 @@ h2 {
 		' .     a1   a6    a4   .'  20fr
 		' .     a1   .     a4   .'  12fr
 		/ 320fr 20fr 240fr 20fr 40fr;
-	height: 46.5vmin;
-	width: 46vmin;
+	height: vmin(46.5);
+	width: vmin(46);
 }
 
 .composition-iii-with-blue-yellow-and-white-1936 {
@@ -205,8 +208,8 @@ h2 {
 		' a7    a2  . ' 10fr
 		' a8    a2  . ' 41fr
 		/ 123fr 7fr 205fr;
-	height: 43.5vmin;
-	width: 33.5vmin;
+	height: vmin(43.5);
+	width: vmin(33.5);
 }
 
 .new-york-city-i-1942 {
@@ -237,6 +240,6 @@ h2 {
 		' a68  a29  a69  a69  a69  a49  a70   a153 a71  a3   a72   a4   a73  a5   a74  a6   a75  a7   a76  a76  a76  a8   a77 ' 28fr
 		' .    a29  .    a121 .    a49  .     a153 .    a3   .     a4   .    a5   .    a6   .    a7   .    a155 .    a8   .   ' 20fr
 		/ 23fr 24fr 23fr 24fr 18fr 24fr 218fr 25fr 82fr 25fr 240fr 24fr 62fr 25fr 81fr 24fr 38fr 19fr 53fr 24fr 17fr 24fr 25fr;
-	height: 114.2vmin;
-	width: 119.3vmin;
+	height: vmin(114.2);
+	width: vmin(119.3);
 }
