@@ -63,7 +63,7 @@ footer {
 	}
 }
 
-@for $i from 1 through 699 {
+@for $i from 1 through 621 {
 	.a#{$i} {
 		grid-area: a#{$i};
 	}
@@ -233,6 +233,27 @@ footer {
 		/ 123fr 7fr 205fr;
 	height: vmin(43.5);
 	width: vmin(33.5);
+}
+
+.composition-with-red-yellow-and-blue-1942 {
+	grid:
+		' a1   a6   .    a11  .    a16  .    a21  .     a26  .     a31  .    a38  .    a45  .   ' 162fr
+		' a2   a2   a2   a2   a2   a2   a2   a2   a2    a2   a2    a2   a2   a2   a2   a2   a2  ' 19fr
+		' .    a7   .    a12  .    a17  .    a22  .     a27  .     a32  .    a39  .    a46  .   ' 88fr
+		' a3   a3   a3   a3   a3   a3   a3   a3   a3    a3   a3    a3   a3   a3   a3   a3   a3  ' 19fr
+		' .    a8   .    a13  .    a18  .    a23  .     a28  .     a33  .    a40  .    a47  .   ' 68fr
+		' a4   a4   a4   a4   a4   a4   a4   a4   a4    a4   a4    a4   a4   a4   a4   a4   a4  ' 17fr
+		' .    a9   .    a14  .    a19  .    a24  .     a29  .     a34  .    a41  .    a48  .   ' 100fr
+		' a5   a5   a5   a5   a5   a5   a5   a5   a5    a5   a5    a5   a5   a5   a5   a5   a5  ' 20fr
+		' .    a10  .    a15  .    a20  .    a25  .     a30  a53   a35  .    a42  .    a49  .   ' 117fr
+		' .    a10  .    a15  .    a20  .    a25  .     a30  a36   a35  a43  a42  .    a49  .   ' 19fr
+		' .    a10  a50  a15  a51  a20  a52  a25  .     a30  .     a35  .    a42  .    a49  a54 ' 31fr
+		' .    a10  .    a15  .    a20  .    a25  .     a30  .     a35  .    a42  .    a49  .   ' 35fr
+		' .    a10  .    a15  .    a20  .    a25  .     a30  a37   a35  a44  a42  .    a49  .   ' 14fr
+		' .    a10  .    a15  .    a20  .    a25  .     a30  .     a35  .    a42  .    a49  .   ' 18fr
+		/ 92fr 16fr 68fr 16fr 39fr 15fr 21fr 15fr 128fr 15fr 114fr 15fr 27fr 14fr 61fr 14fr 22fr;
+	height: vmin(72.7);
+	width: vmin(69.2);
 }
 
 .new-york-city-i-1942 {
