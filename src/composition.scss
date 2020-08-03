@@ -1,5 +1,6 @@
 body {
 	font-family: 'Prompt', sans-serif;
+	font-weight: 500;
 }
 
 h1 {
@@ -14,10 +15,16 @@ h2 {
 	font-size: 1rem;
 	font-weight: 500;
 	line-height: 1.5;
-	margin-top: 30px;
+	margin-top: 3em;
 	padding: 0 1em;
 	text-align: center;
 	text-transform: uppercase;
+}
+
+footer {
+	margin-top: 25vmin;
+	padding: 0 1em;
+	text-align: center;
 }
 
 .black {
