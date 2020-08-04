@@ -235,6 +235,26 @@ footer {
 	width: vmin(33.5);
 }
 
+.composition-with-red-and-black-1936 {
+	grid:
+		' .    a1   .     a2   .     a3   .  ' 59fr
+		' a4   a1   .     a2   .     a3   .  ' 64fr
+		' .    a1   .     a2   .     a3   .  ' 321fr
+		' a5   a1   a6    a2   a7    a3   a8 ' 16fr
+		' .    a1   .     a2   .     a3   .  ' 161fr
+		' .    a1   .     a2   a9    a3   a10' 16fr
+		' .    a1   .     a2   .     a3   .  ' 89fr
+		' .    a1   .     a2   a11   a3   .  ' 17fr
+		' .    a1   .     a2   .     a3   .  ' 79fr
+		' .    a1   .     a2   a12   a3   a13' 14fr
+		' .    a1   .     a2   .     a3   .  ' 140fr
+		' .    a1   .     a2   a14   a3   .  ' 13fr
+		' .    a1   .     a2   a15   a3   .  ' 33fr
+		/ 38fr 13fr 337fr 14fr 604fr 12fr 23fr;
+	height: vmin(102.2);
+	width: vmin(104.1);
+}
+
 .composition-with-red-yellow-and-blue-1942 {
 	grid:
 		' a1   a6   .    a11  .    a16  .    a21  .     a26  .     a31  .    a38  .    a45  .   ' 162fr
